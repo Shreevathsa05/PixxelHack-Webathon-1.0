@@ -9,7 +9,7 @@ function Footer() {
         
         {/* Logo */}
         <div className="relative w-10 h-10">
-          <img src="favicon.ico" alt="Logo" fill className="object-contain" />
+          <img src="favicon.ico" alt="Logo" className="object-contain" />
         </div>
 
         {/* Text */}
