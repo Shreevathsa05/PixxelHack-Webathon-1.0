@@ -7,7 +7,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="flex justify-center">
+    <div className="cursor-none flex justify-center">
       <nav className="w-[50%] bg-black bg-opacity-90 shadow-[0_0_20px_rgba(6,182,212,0.8)] text-gray-500 px-4 rounded-4xl mx-4 mt-8">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between px-6 py-4">
           <Link href="/" className="flex items-center space-x-4">
