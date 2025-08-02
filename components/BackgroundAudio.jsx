@@ -29,7 +29,7 @@ const BackgroundAudio = () => {
         .play()
         .then(() => {
           setIsPlaying(true);
-          audio.volume = 0.2;
+          audio.volume = 0.3;
         })
         .catch((err) => {
           console.log('Audio play failed (likely due to browser restriction):', err);
