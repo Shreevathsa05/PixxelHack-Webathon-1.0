@@ -4,6 +4,7 @@ import Navbar from "../components/navbar";
 import { GamingCrosshair } from "../components/crosshair";
 import BackgroundAudio from "../components/BackgroundAudio";
 import Footer from "../components/Footer";
+import Marquee from "../components/marquee";
 export default function RootLayout({ children }) {
   return (
    <html lang="en" className="cursor-none select-none">
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
         <BackgroundAudio/>
         <GamingCrosshair/>
         {children}
+      
         <Footer/>
       </body>
     </html>

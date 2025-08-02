@@ -10,3 +10,72 @@
 .animate-slide {
   animation: slide 18s infinite;
 }
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-outer {
+  overflow: hidden;
+  width: 100vw;
+  background-color: #000;
+  padding: 1rem 0;
+}
+
+.marquee-inner {
+  display: flex;
+  width: max-content;
+  animation: scrollMarquee 15s linear infinite;
+  animation-play-state: running;
+}
+
+.marquee-outer:hover .marquee-inner {
+  animation-play-state: paused;
+}
+
+.marquee-card {
+  width: 300px;
+  min-width: 160px;
+  height: 300px;
+  background-color: #000000;
+  color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.shiny-text {
+  color: #389e9ea4; /* Adjust this color to change intensity/style */
+  background: linear-gradient(
+    120deg,
+    #ffffff00 40%,
+    rgba(0, 255, 247, 0.8) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
+.shiny-text.disabled {
+  animation: none;
+}
