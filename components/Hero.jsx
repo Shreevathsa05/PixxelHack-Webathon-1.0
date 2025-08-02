@@ -16,17 +16,23 @@ function Hero() {
 
     return (
         <>
+        <div className="flex flex-col justify-center items-center">
+            <div className='bg-linear-to-tr from-cyan-500 to-purple-300 md:w-auto w-[85vw] px-4 py-1 rounded-b-md'>
+                <h1 className='md:text-2xl text-md '>🕹 Enter the GameZone – Equip. Upgrade. Dominate</h1>
+            </div>
+        
+        </div>
             {/* First section - animates on load */}
             <motion.div
                 ref={firstRef}
-                className="flex flex-col justify-center items-center mt-[3vh] mb-[10vh]"
+                className="flex flex-col justify-center items-center  mb-[10vh]"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false, amount: 0.4 }}
                 transition={{ duration: 1, ease: 'easeOut' }}
             >
                 <div>
-                    <h1 className="text-cyan-400 text-xl py-8">Featured</h1>
+                    <h1 className="text-cyan-400 text-xl pt-2 pb-8">Featured</h1>
                 </div>
 
                 <motion.div
