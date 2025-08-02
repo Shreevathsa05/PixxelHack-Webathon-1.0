@@ -11,7 +11,9 @@ export default function RootLayout({ children }) {
       <body className="bg-black ">
         < Navbar/> 
         <BackgroundAudio/>
-        <GamingCrosshair/>
+        <div className="md:cursor-pointer md:block">
+          <GamingCrosshair/>
+        </div>
         {children}
         <Footer/>
       </body>

@@ -31,7 +31,7 @@ export const GamingCrosshair = () => {
 
   return (
     <div
-      className="fixed pointer-events-none z-50 transition-transform duration-75"
+      className=" none sm:fixed pointer-events-none z-50 transition-transform duration-75"
       style={{
         left: mousePos.x,
         top: mousePos.y,
