@@ -6,7 +6,10 @@ export default function Home() {
   return (
     <div >
      <Hero/>
-     <Marquee/>
+     <div className="mt-[10vh]">
+      <div className="text-3xl pb-16 md:text-4xl text-center text-purple-300">Trending</div>
+      <Marquee/>
+     </div>
     </div>
   );
 }
